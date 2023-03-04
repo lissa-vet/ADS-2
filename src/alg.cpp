@@ -4,9 +4,10 @@
 
 
 double pown(double value, uint16_t n) {
-  if (!n) return 1;
-  else {
-    if (n==1) return value;
+  if (!n) {
+    return 1;
+  } else {
+    if (n == 1) return value;
   }
   int count = 0;
   double res = 1;
@@ -18,8 +19,9 @@ double pown(double value, uint16_t n) {
 }
 
 uint64_t fact(uint16_t n) {
-  if (!n) return 1;
-  else return n*fact(n - 1);
+  if (!n) {
+    return 1;
+  } else return n*fact(n - 1);
 }
 
 double calcItem(double x, uint16_t n) {
